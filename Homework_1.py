@@ -9,16 +9,15 @@ mondat=str(input())
 
 for i in range(len(mondat)):
     if(mondat[i] in dict):
-        dict[mondat[i]]=dict[mondat[i]]+1
+        dict[mondat[i]]=dict[mondat[i]]+1 # if in dict, add one to value
     else:
-        dict[mondat[i]]=1
-    
-print("Betuk gyakorisaga: "+(dict))
+        dict[mondat[i]]=1                   #if not in dict, add into dict, including space(technically also a character)
+
+toPrint=str("Betűk gyakorisága: {}")    # string that we will print ever time.
+print(toPrint.format(dict)) #Print frequency
 list = mondat.split(" ")
-print("forditva: "+list[len(list)-1])
-print("Listában, szavanként:" + list[0,len(list)])
-
-
-
-
-
+toPrint=("Fordítva: {}")    #print reverse
+print(toPrint.format(mondat[::-1]))
+toPrint=str("Listába rendezve szavanként: {}")
+print(toPrint.format(list[::1])) # print list of words
+#done
