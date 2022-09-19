@@ -1,7 +1,45 @@
+from tkinter import W
+
+
 def calculate(name):
-    name=name.lower()
+    name = name.lower()
     if name == "rectangle":
-        l= int(input("Enter the rectangle's length"))
+        l = int(input("Enter the rectangle's length: "))
+        w = int(input("Enter the rectangle's width: "))
+
+        rec_area = l*w
+
+        print("The area of the rectangle is: "+str(rec_area))
+
+    elif name == "square":
+
+        s = int(input("Enter the square's side length: "))
+
+        sq_area = s*s
+
+        print("The area of the square is: "+str(sq_area))
+
+    elif name == "triangle":
+        l = int(input("Enter the triangle's length: "))
+        w = int(input("Enter the triangle's width: "))
+
+        tri_area = 0.5*w*l
+
+        print("The area of the triangle is: "+str(tri_area))
+
+    elif name == "circle":
+        r = int(input("Enter the circle's radius length: "))
+        pi = 3.14
+
+        circle_area = r*r*pi
+
+        print("The area of the circle is: "+str(circle_area))
+    else:
+        print("Sorry! This shape is not available!")
+
 
 if __name__ == "__main__":
-    pass
+    print("Calculare Shape Area")
+    shape_name = input(
+        "Enter the name of the Shape whose area you want to find: ")
+    calculate(shape_name)
