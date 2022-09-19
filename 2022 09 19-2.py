@@ -37,9 +37,20 @@ def calculate(name):
     else:
         print("Sorry! This shape is not available!")
 
+################################################################
+
+def get_grades(name):
+    marks = {"James" : 90, "Jule":60, "Bob":75, "Katy":90}
+    
+    for student in marks:
+        if student == name:
+            print(marks[student])
+            break
+    else:
+        print("No entry with that name found.")
+
 
 if __name__ == "__main__":
-    print("Calculare Shape Area")
-    shape_name = input(
-        "Enter the name of the Shape whose area you want to find: ")
-    calculate(shape_name)
+    print("maths test result")
+    student_name = input("Type student's name: ")
+    get_grades(student_name)
