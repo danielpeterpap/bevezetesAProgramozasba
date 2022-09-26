@@ -1,7 +1,6 @@
 #Írjunk egy olyan kódot, amely megszámolja hány darab különböző betű szerepel egy konzolról bekért mondatban,
 # majd írassuk ki fordítva az egész mondatot, végül Tegyük a szavakat egy listába. 
 def Hazi(mondat):
-    mondat=str("")
     dict= {}
     
     for i in range(len(mondat)):
