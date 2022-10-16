@@ -6,10 +6,6 @@ class Team:
         self._szerepkor = szerepkor
         print("-- Developer létrehozva --")
 
-    def azon_projekt(self, masik):
-        if isinstance(masik, Team):
-            return self.projekt == masik.projekt
-
     @property
     def nev(self):
         return self._nev
