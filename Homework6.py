@@ -4,7 +4,12 @@ import string
 
 def palindrom(a):
     a=a.lower()
-    a=(irasjel_eltavolitas(a))
+    a=fix(irasjel_eltavolitas(a))
+    #print(a)
+    #onovottotavakazszsirisrizsoytoladobobantisementolosuttacieregiboravakolatjelonezramzsekililezsemeldobahatosagaygakeletrekkenohirebotkoscaynegelabalozorivargabetutarauzstralvekniscikoseaberohalkanhasitelekpanelagiridikullemaradohkiselogatnaygernooidamagoroscerrenezokozsaletterokmorkajakosoktufateisajaroletetgeleleygeisomodikisamoripatakabalonahorkantobenotagutitnatitantitugatonebotnakrohanolabakatapiromasikidomosieygelelegtetelorajasietafutkosokajakromkorettelazsokozenerrescorogamadioonreygantagolesikhodaramellukidirigalenapkeletisahnaklahorebaesokiscinkevlartzsuaratutebagravirozolabalegeynascoktoberihonekkertelekaygagasotahabodlemezselilikezsmarzenolejtalokavarobigereicattusolotnemesitnabobodaloytozsirsirizssakavatottovono
+    #onovottotavakasszirisriszotyoladobobantisementolosuttacieregiboravakolatjelonezramszekilileszemeldobahatosagagyakeletrekkenohirebotkocsanyegelabalozorivargabetutarausztralveknicsikoseaberohalkanhasitelekpanelagiridikullemaradohkiselogatnagyernooidamagorocserrenezokoszaletterokmorkajakosoktufateisajaroletetgelelegyeisomodikisamoripatakabalonahorkantobenotagutitnatitantitugatonebotnakrohanolabakatapiromasikidomosiegyelelegtetelorajasietafutkosokajakromkorettelaszokozenerrecsorogamadioonregyantagolesikhodaramellukidirigalenapkeletisahnaklahorebaesokicsinkevlartszuaratutebagravirozolabalegenyacsoktoberihonekkertelekagyagasotahabodlemeszelilikeszmarzenolejtalokavarobigereicattusolotnemesitnabobodalotyoszirsiriszszakavatottovono
+    #print(a[::-1])
+    
     if a == a[::-1]:
         print("Palindrom")
     else:
@@ -35,22 +40,35 @@ def fix(a):
         if i =="é":
             normal+="e"
             continue
-#        if i =="sz":
-#            normal+="zs"
-#            continue
-#        if i =="zs":
-#            normal+="sz"
-#            continue
         else:
             normal+=i
 #        normal.replace("sc","cs")
 #        normal.replace("zd","dz")
-#        normal.replace("szd","dzs")
-#        normal.replace("yg","gy")
+##        normal.replace("yg","gy")
 #        normal.replace("yt","ty")
 #        normal.replace("yl","ly")
 #        normal.replace("yn","ny")
-#                
+#    normal2=""
+#    for i in range(len(normal)):
+#        if "szd" in normal[i:i+2]:
+#            i=i+2
+#            normal2+="dzs"
+#            continue
+#        if "sz" in normal[i:i+1]:
+#            i=i+1
+#            normal2+="zs"
+#            continue
+#        if "zs" in normal[i:i+1]:
+#            i=i+1
+#            normal2+="sz"
+#            continue
+#        else:
+#            normal2+=normal[i]
+#            
+#    
+#        
+#        
+#
     return normal
         
     
