@@ -1,4 +1,3 @@
-from encodings import normalize_encoding
 import string
 
 
@@ -44,33 +43,7 @@ def fix(a):
             continue
         else:
             normal += i
-#        normal.replace("sc","cs")
-#        normal.replace("zd","dz")
-# normal.replace("yg","gy")
-#        normal.replace("yt","ty")
-#        normal.replace("yl","ly")
-#        normal.replace("yn","ny")
-#    normal2=""
-#    for i in range(len(normal)):
-#        if "szd" in normal[i:i+2]:
-#            i=i+2
-#            normal2+="dzs"
-#            continue
-#        if "sz" in normal[i:i+1]:
-#            i=i+1
-#            normal2+="zs"
-#            continue
-#        if "zs" in normal[i:i+1]:
-#            i=i+1
-#            normal2+="sz"
-#            continue
-#        else:
-#            normal2+=normal[i]
-#
-#
-#
-#
-#
+
     return normal
 
 
